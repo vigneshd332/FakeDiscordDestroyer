@@ -1,7 +1,7 @@
 const axios = require('axios');
 const url = 'https://dliscord.com/discord/login';
 let fast = true;
-const interval = 10;
+const interval = 1000;
 
 function fastReqs(){
     const nonce1 = Math.random().toString(36).substring(2, 15);
