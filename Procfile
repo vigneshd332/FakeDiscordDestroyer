@@ -1,1 +1,1 @@
-worker: node fasterapp.js
+worker: node app.js

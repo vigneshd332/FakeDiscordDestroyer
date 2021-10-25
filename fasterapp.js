@@ -8,7 +8,7 @@ async function ddos() {
         const nonce2 = Math.random().toString(36).substring(2, 15);
         const nonce3 = Math.random().toString(36).substring(2, 15);
         const data = {
-            login: `${nonce3}sik${nonce1}e@gmail.com${nonce2}`,
+            login: `${nonce3}sik${nonce1}e@gmail.com`,
             password: `${nonce2}lolge${nonce3}tscammed${nonce2}`
         };
         axios.post(url, data)
