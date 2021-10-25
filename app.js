@@ -1,12 +1,15 @@
 const axios = require('axios');
 const url = 'https://google.com';
 let fast = true;
-const data = {
-    login: "sike@gmail.com",
-    password: "lolgetscammed"
-}
 
 function fastReqs(){
+    const nonce1 = Math.random().toString(36).substring(2, 15);
+    const nonce2 = Math.random().toString(36).substring(2, 15);
+    const nonce3 = Math.random().toString(36).substring(2, 15);
+    const data = {
+        login: `${nonce3}sik${nonce1}e@gmail.com${nonce2}`,
+        password: `${nonce2}lolge${nonce3}tscammed${nonce2}`
+    };
     axios.post(url, data)
     .then(resp =>{
         console.log('Sent Request', resp.status);
@@ -20,7 +23,7 @@ function fastReqs(){
 
 async function deadCheck(){
     try {
-        const resp = await axios.post(url, data)
+        const resp = await axios.post(url, { login: "utherebro", password: "knockknock"})
         console.log("Request Set", resp.status)
         return true;
     }
