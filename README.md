@@ -6,6 +6,8 @@ Send continuous POST requests to fake Discord phishing sites.
 <li> Add the fake discord site login URL to the url variable in line 2. <li>
 <li> Install dependancies: <code>npm i</code> </li>
 <li> Run the app: <code>node app.js</code> </li>
+<li> <code>app.js</code> is a more managed version but is kinda slow</li>
+<li> <code>fasterapp.js</code> has no timing controls, but is fast af</li>
 </ul>
 
 ### Behaviour
