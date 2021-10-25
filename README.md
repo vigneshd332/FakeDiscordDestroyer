@@ -13,6 +13,7 @@ Send continuous POST requests to fake Discord phishing sites.
 ### Behaviour
 <ul>
 <li>The app slows down to 1 request per 2 seconds when theres no response detected. If there is a response, then it speeds up to 1 request per 50 milliseconds.</li>
+<li>The reqest data is randomized so database removal operations will be more annoying.</li>
 <li>The default URL in the code returns a 500 error from the webpage regardless of the input so its the understanding that this is intentional from the server side. See if you get a 500 when you log the error. If you do, then youre good to go.</li>
 </ul>
 
