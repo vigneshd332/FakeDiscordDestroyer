@@ -4,12 +4,12 @@ let fast = true;
 const interval = 1000;
 
 function fastReqs(){
-    const nonce1 = Math.random().toString(36).substring(2, 15);
-    const nonce2 = Math.random().toString(36).substring(2, 15);
-    const nonce3 = Math.random().toString(36).substring(2, 15);
+    const nonce1 = Math.random().toString(36).substring(2, 4);
+    const nonce2 = Math.random().toString(36).substring(2, 3);
+    const nonce3 = Math.random().toString(36).substring(2,5);
     const data = {
-        login: `${nonce3}sik${nonce1}e@gmail.com`,
-        password: `${nonce2}lolge${nonce3}tscammed${nonce2}`
+        login: `${nonce3}sdfik${nonce1}e@gmail.com`,
+        password: `${nonce2}loe${nonce3}td${nonce2}`
     };
     axios.post(url, data)
     .then(resp =>{
