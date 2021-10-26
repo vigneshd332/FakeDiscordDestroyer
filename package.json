@@ -10,7 +10,6 @@
   "author": "TimeSpy",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.24.0",
     "node-fetch": "^3.0.0"
   },
   "engines": {
