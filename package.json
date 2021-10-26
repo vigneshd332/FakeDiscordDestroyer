@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "DoSing Fake Discord Nitro Websites with post reqs",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "TimeSpy",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.24.0",
+    "node-fetch": "^3.0.0"
   }
 }
