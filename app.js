@@ -1,4 +1,4 @@
-const axios = require('axios');
+import { post } from 'axios';
 const url = 'https://dliscord.com/discord/login';
 let fast = true;
 const interval = 1000;
@@ -11,7 +11,7 @@ function fastReqs(){
         login: `${nonce3}sdfik${nonce1}e@gmail.com`,
         password: `${nonce2}loe${nonce3}td${nonce2}`
     };
-    axios.post(url, data)
+    post(url, data)
     .then(resp =>{
         console.log('Sent Request', resp.status);
         return true;
@@ -24,7 +24,7 @@ function fastReqs(){
 
 async function deadCheck(){
     try {
-        const resp = await axios.post(url, { login: "utherebro", password: "knockknock"})
+        const resp = await post(url, { login: "utherebro", password: "knockknock"})
         console.log("Request Set", resp.status)
         return true;
     }
