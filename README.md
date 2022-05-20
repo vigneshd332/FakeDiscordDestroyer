@@ -8,6 +8,7 @@ Send continuous POST requests to fake Discord phishing sites.
 <li> Run the app: <code>node app.js</code> </li>
 <li> <code>app.js</code> is a more managed version but is kinda slow</li>
 <li> <code>fasterapp.js</code> has no timing controls, but is fast af and can get you IP banned</li>
+<li> Repo has a <code>Procfile</code> for Heroku deploys</li>
 </ul>
 
 ### Behaviour
